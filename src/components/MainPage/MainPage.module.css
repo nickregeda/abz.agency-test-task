@@ -1,0 +1,254 @@
+.container {
+    box-sizing: border-box;
+
+    width: 1024px;
+    margin: 0 auto;
+    padding: 0 0 100px 0;
+
+    background: #F8F8F8;
+
+    /*border: solid 1px black;*/
+}
+
+/*--header--*/
+
+.header {
+    /*border: solid 1px black;*/
+    height: 60px;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 104px;
+    height: 26px;
+}
+
+.header_buttons {
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_users_button, .header_signup_button, .intro_signup_button, .show_more_button {
+    outline: none;
+
+    cursor: pointer;
+
+    font-family: Nunito;
+    font-size: 16px;
+    line-height: 26px;
+
+    background: #F4E041;
+    color: rgba(0, 0, 0, 0.87);
+
+    width: 100px;
+    height: 34px;
+
+    border-radius: 50px;
+    border: none;
+
+    transition: 0.1s all;
+}
+
+.header_users_button:hover, .header_signup_button:hover, .intro_signup_button:hover, .show_more_button:hover {
+    background: #FFE302;
+}
+
+.header_users_button:disabled, .header_signup_button:disabled, .intro_signup_button:disabled, .show_more_button:disabled {
+    background: #B4B4B4;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+/*--intro section--*/
+
+.intro_section {
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../img/intro_background.jpeg');
+
+    height: 650px;
+
+    padding: 164px 322px;
+    box-sizing: border-box;
+}
+
+.intro_label {
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+
+    color: white;
+
+    margin-bottom: 21px;
+}
+
+.intro_text {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+
+    color: white;
+
+    margin-bottom: 32px;
+}
+
+.intro_signup_button, .show_more_button {
+    display: block;
+    margin: 0 auto;
+}
+
+/*--users section--*/
+
+.users_section {
+    box-sizing: border-box;
+
+    min-height: 851px;
+
+    padding: 140px 60px 0px 60px;
+}
+
+.users_label, .signup_label {
+    text-align: center;
+
+    font-size: 40px;
+    line-height: 40px;
+
+    color: rgba(0, 0, 0, 0.87);
+
+    margin-bottom: 50px;
+}
+
+.show_more_button {
+    width: 120px;
+}
+
+.users_block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.user_item {
+    box-sizing: border-box;
+
+    background: white;
+
+    border-radius: 5px;
+
+    min-height: 254px;
+    width: 282px;
+
+    margin-bottom: 29px;
+    padding: 20px;
+
+    word-wrap: break-word;
+}
+
+.user_photo {
+    display: block;
+
+    margin: 0 auto 20px auto;
+
+    width: 70px;
+    border-radius: 50px;
+}
+
+.user_item div {
+    font-size: 16px;
+    line-height: 26px;
+
+    color: rgba(0, 0, 0, 0.87);
+
+    text-align: center;
+}
+
+.user_name {
+    margin-bottom: 20px;
+}
+
+/*--signup section--*/
+
+.signup_section {
+    box-sizing: border-box;
+
+    padding: 140px 60px 0px 60px;
+}
+
+.correct_input, .incorrect_input {
+    border-radius: 4px;
+
+    box-sizing: border-box;
+
+    display: block;
+
+    height: 54px;
+    width: 380px;
+
+    padding: 14px 16px;
+
+    font-family: Nunito;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.incorrect_input {
+    margin: 0 auto 0px auto;
+    border: solid 2px #CB3D40;
+}
+
+.correct_input {
+    margin: 0 auto 50px auto;
+    border: 1px solid #D0CFCF;
+}
+
+.signup_section input[type='text']:last-of-type {
+    margin-bottom: 0;
+}
+
+.phone_example {
+    width: 137px;
+    margin: 4px 0 25px 278px;
+
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #7E7E7E;
+}
+
+.positions_select_label {
+    display: block;
+    width: 380px;
+    margin: 0 auto 11px auto;
+}
+
+.position_radio {
+    width: 380px;
+    margin: 0 auto 7px auto;
+
+    display: flex;
+    align-items: center;
+}
+
+.position_radio:last-of-type {
+    margin-bottom: 47px;
+}
+
+.position_name {
+    margin-left: 12px;
+}
+
+.error {
+    display: block;
+    width: 380px;
+    margin: 0 auto 32px auto;
+    padding-left: 36px;
+    font-family: Asap;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #CB3D40;
+}
