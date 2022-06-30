@@ -1,0 +1,30 @@
+.header {
+    height: 60px;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 104px;
+    height: 26px;
+}
+
+.header_buttons {
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 0 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 0 16px;
+    }
+}

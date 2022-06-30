@@ -31,7 +31,7 @@ export const signupAPI = {
             {
                 headers: {
                     'Content-Type': 'multipart/form-data',
-                    'Token': `eyJpdiI6ImQ3VDZra1hkUmQwWlA3VllmUmVuNnc9PSIsInZhbHVlIjoiQUs5SU83WmVCOHdpdmh0UWNaOU5pM1preVErS2NoNTRSVzJKUnJZZFlUbmh0SlVucFV1ZDFTKzVpUTl1TW9GNUJlNTlcL0VpUWRuQ2F5a0Q0VlcyRkpRPT0iLCJtYWMiOiJiNjgxYmI3ZDhhOTFkNTc4OWYwMTllNWU5MTU2NTFjNWFjY2YyOWNmOGNhZGZmY2ViMzhkOGMyMGM3ZTBkN2Q0In0=`
+                    'Token': `eyJpdiI6IlV2blhNeTlpNldVejNVdDE4a25BcXc9PSIsInZhbHVlIjoiUUNkY083VWptVmh6RFhYV3drUExwc3VRMFZ5TnJPa3pXeGxwYnJJRWlRQ1wvSHF5eDhqdUNMeDRNazhja2RRclhCNWZPTkF4TVwvMDFMWm85azRndk1Wdz09IiwibWFjIjoiNzUxZDYzNTVmYTg3NWZiNTM1Y2EyN2I1ZGZjODZlMDI2MzM1YWMxMDdhNzg5MzhmNGIxYzdkYWUxZTdjYzhlMiJ9`
                 }
             })
     },

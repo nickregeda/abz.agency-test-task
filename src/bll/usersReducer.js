@@ -29,17 +29,13 @@ const usersReducer = (state = initialState, action) => {
 export default usersReducer;
 
 //Action creators
-export const setUsers = (users) => {
-    debugger
-    return {type: SET_USERS, users}
-};
+export const setUsers = (users) => ({type: SET_USERS, users});
 export const setTotalPages = (total_pages) => ({type: SET_TOTAL_PAGES, total_pages});
 
 //Thunk creators
 export const getUsers = (page, count, offset) => {
     return (dispatch) => {
         usersAPI.getUsers(page, count, offset).then(response => {
-            debugger
             dispatch(setUsers(response.data.users));
             dispatch(setTotalPages(response.data.total_pages));
         })

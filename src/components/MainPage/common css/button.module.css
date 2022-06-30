@@ -1,0 +1,49 @@
+.header_users_button, .header_signup_button, .intro_signup_button, .show_more_button {
+    outline: none;
+
+    cursor: pointer;
+
+    font-family: Nunito;
+    font-size: 16px;
+    line-height: 26px;
+
+    background: #F4E041;
+    color: rgba(0, 0, 0, 0.87);
+
+    width: 100px;
+    height: 34px;
+
+    border-radius: 50px;
+    border: none;
+
+    transition: 0.1s all;
+}
+
+.header_users_button:hover, .header_signup_button:hover, .intro_signup_button:hover, .show_more_button:hover {
+    background: #FFE302;
+}
+
+.header_users_button:disabled, .header_signup_button:disabled, .intro_signup_button:disabled, .show_more_button:disabled {
+    background: #B4B4B4;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.intro_signup_button, .show_more_button {
+    display: block;
+    margin: 0 auto;
+}
+
+.show_more_button {
+    width: 120px;
+}
+
+@media screen and (max-width: 768px) {
+    .show_more_button {
+        margin-top: 34px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .show_more_button {
+        margin-top: 50px;
+    }
+}

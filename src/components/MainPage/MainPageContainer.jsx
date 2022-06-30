@@ -4,10 +4,9 @@ import {getUsers, setUsers} from "../../bll/usersReducer";
 import {getPositions, signUp} from "../../bll/signupReducer";
 
 let mapStateToProps = (state) => ({
-    users: state.usersReducer.users,
     positions: state.signupReducer.positions,
-    total_pages: state.usersReducer.total_pages,
-    token: state.signupReducer.token
+    token: state.signupReducer.token,
+    registered: state.signupReducer.registered,
 });
 
 export default connect(mapStateToProps, {getUsers, getPositions, signUp, setUsers})(MainPage) // функция connect()() передает заданные данные из redux компоненте в виде props

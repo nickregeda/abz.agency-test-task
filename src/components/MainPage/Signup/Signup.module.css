@@ -1,0 +1,26 @@
+.signup_section {
+    box-sizing: border-box;
+
+    padding: 140px 60px 0px 60px;
+}
+
+.registered_success_image {
+    display: block;
+    margin: 0 auto;
+}
+
+.signup_section input[type='text']:last-of-type {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .signup_section {
+        padding: 140px 32px 0px 32px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .signup_section {
+        padding: 140px 16px 0px 16px;
+    }
+}

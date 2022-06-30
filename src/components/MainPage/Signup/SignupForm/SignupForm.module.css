@@ -1,0 +1,53 @@
+.error {
+    display: block;
+
+    width: 380px;
+
+    margin: 0 auto 32px auto;
+    padding-left: 36px;
+
+    font-family: Asap;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #CB3D40;
+}
+
+.phone_example {
+    width: 137px;
+    margin: 4px 0 25px 278px;
+
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #7E7E7E;
+}
+
+
+.position_radio {
+    width: 380px;
+    margin: 0 auto 7px auto;
+
+    display: flex;
+    align-items: center;
+}
+
+.position_radio:last-of-type {
+    margin-bottom: 47px;
+}
+
+.position_name {
+    margin-left: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .phone_example {
+        margin: 4px 0 25px 178px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .phone_example {
+        margin: 4px 0 25px 16px;
+    }
+}

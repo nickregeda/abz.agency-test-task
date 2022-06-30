@@ -1,0 +1,30 @@
+.users_label, .signup_label, .registered_success_label {
+    text-align: center;
+
+    font-size: 40px;
+    line-height: 40px;
+
+    color: rgba(0, 0, 0, 0.87);
+
+    margin-bottom: 50px;
+}
+
+.registered_success_label {
+    margin-top: 20px;
+}
+
+.positions_select_label {
+    display: block;
+    width: 380px;
+    margin: 0 auto 11px auto;
+}
+
+.intro_label {
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+
+    color: white;
+
+    margin-bottom: 21px;
+}
