@@ -7,6 +7,10 @@ import signupFormScheme from "../../../form validation/signupFormScheme";
 import SignupForm from "./SignupForm/SignupForm";
 
 const Signup = (props) => {
+    let onSignUpSubmit = (values) => {
+        props.signUp(values.name, values.email, values.phone, Number(values.position), values.photo)
+    }
+
     return (
         <>
             {props.registered ? <div>
@@ -17,7 +21,7 @@ const Signup = (props) => {
                     <div className={label.signup_label}>Working with POST request</div>
                     <Formik
                         initialValues={{name: '', email: '', phone: '', position: '', photo: ''}}
-                        onSubmit={props.onSignUpSubmit}
+                        onSubmit={onSignUpSubmit}
                         validate={values => {
                             const errors = {};
                             if (!values.email) {
@@ -41,7 +45,7 @@ const Signup = (props) => {
                     >
                         {({values, errors, touched, setFieldValue}) => (
                             <SignupForm values={values} errors={errors} touched={touched}
-                                        setFieldValue={setFieldValue}/>
+                                        setFieldValue={setFieldValue} positions={props.positions}/>
                         )}
                     </Formik>
                 </div>

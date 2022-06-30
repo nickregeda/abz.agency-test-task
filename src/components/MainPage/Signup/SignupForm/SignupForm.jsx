@@ -7,6 +7,13 @@ import SignupField from "./SignupField/SignupField";
 import CustomFileButton from "./CustomFileButton/CustomFileButton";
 
 const SignupForm = (props) => {
+    let positionsElements = props.positions.map(p =>
+        <div className={signup_form.position_radio} key={p.id}><Field style={{outline: 'none', width: '20px', height: '20px'}}
+                                                                name={'position'} type={'radio'}
+                                                                value={p.id.toString()}/>
+            <div className={signup_form.position_name}>{p.name}</div>
+        </div>);
+
     return (
         <Form className={signup_form.signup_form}>
             <SignupField errors={props.errors.name} touched={props.touched.name} name={'name'}
@@ -26,7 +33,7 @@ const SignupForm = (props) => {
 
             <div>
                 <label className={label.positions_select_label}>Select your position</label>
-                {props.positionsElements}
+                {positionsElements}
                 <ErrorMessage className={signup_form.error} name={'position'} component={'div'}/>
             </div>
 

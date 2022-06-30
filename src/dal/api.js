@@ -1,7 +1,5 @@
 import * as axios from 'axios';
 
-// , {headers: {'Authorization': `Bearer eyJpdiI6Im9mV1NTMlFZQTlJeWlLQ3liVks1MGc9PSIsInZhbHVlIjoiRTJBbUR4dHp1dWJ3ekQ4bG85WVZya3ZpRGlMQ0g5ZHk4M05UNUY4Rmd3eFM3czc2UDRBR0E4SDR5WXlVTG5DUDdSRTJTMU1KQ2lUQmVZYXZZOHJJUVE9PSIsIm1hYyI6ImE5YmNiODljZjMzMTdmMDc4NjEwN2RjZTVkNzBmMWI0ZDQyN2YzODI5YjQxMzE4MWY0MmY0ZTQ1OGY4NTkyNWQifQ==`}}
-
 const instance = axios.create({
     baseURL: 'https://frontend-test-assignment-api.abz.agency/api/v1/',
 })
@@ -31,7 +29,7 @@ export const signupAPI = {
             {
                 headers: {
                     'Content-Type': 'multipart/form-data',
-                    'Token': `eyJpdiI6IlV2blhNeTlpNldVejNVdDE4a25BcXc9PSIsInZhbHVlIjoiUUNkY083VWptVmh6RFhYV3drUExwc3VRMFZ5TnJPa3pXeGxwYnJJRWlRQ1wvSHF5eDhqdUNMeDRNazhja2RRclhCNWZPTkF4TVwvMDFMWm85azRndk1Wdz09IiwibWFjIjoiNzUxZDYzNTVmYTg3NWZiNTM1Y2EyN2I1ZGZjODZlMDI2MzM1YWMxMDdhNzg5MzhmNGIxYzdkYWUxZTdjYzhlMiJ9`
+                    'Token': `eyJpdiI6Ik82NGRiNXFoXC92WHN1NlJDVUxNNFhBPT0iLCJ2YWx1ZSI6IlZSSjBzSVVSV2xHcDR6b21WbU54cDdXUVBIUGJpXC9GQ1ViR01xYWRUTXcyWjYwRm1Sc1hMbHZTbEl3OHVnTDZ5eXlxXC95aXV0bjFFM2l2RVBXVVBzZmc9PSIsIm1hYyI6ImNlZGVlMDUwOTgyMzZiZGRlM2JjNWI1OWRhZjEyM2VjZDMzYjE1MDBlNTEzODU0MmM5NDhkZTQzNTAxN2ZlYmUifQ==`
                 }
             })
     },
