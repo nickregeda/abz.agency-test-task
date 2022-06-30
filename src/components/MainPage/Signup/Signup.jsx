@@ -8,7 +8,8 @@ import SignupForm from "./SignupForm/SignupForm";
 
 const Signup = (props) => {
     let onSignUpSubmit = (values) => {
-        props.signUp(values.name, values.email, values.phone, Number(values.position), values.photo)
+        console.log(values.photo)
+        // props.signUp(values.name, values.email, values.phone, Number(values.position), values.photo)
     }
 
     return (
@@ -38,6 +39,13 @@ const Signup = (props) => {
                             }
                             if (!values.position) {
                                 errors.position = 'Required'
+                            }
+                            if (!values.photo) {
+                                errors.photo = 'Required'
+                            } else if (!['image/jpeg'].includes(values.photo.type) && !['image/jpg'].includes(values.photo.type)) {
+                                errors.photo = 'jpg/jpeg only'
+                            } else if (values.photo.size > 5000000) {
+                                errors.photo = 'size < 5 MB'
                             }
                             return errors;
                         }}

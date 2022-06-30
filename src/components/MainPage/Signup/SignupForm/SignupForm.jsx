@@ -8,9 +8,10 @@ import CustomFileButton from "./CustomFileButton/CustomFileButton";
 
 const SignupForm = (props) => {
     let positionsElements = props.positions.map(p =>
-        <div className={signup_form.position_radio} key={p.id}><Field style={{outline: 'none', width: '20px', height: '20px'}}
-                                                                name={'position'} type={'radio'}
-                                                                value={p.id.toString()}/>
+        <div className={signup_form.position_radio} key={p.id}><Field
+            style={{outline: 'none', width: '20px', height: '20px'}}
+            name={'position'} type={'radio'}
+            value={p.id.toString()}/>
             <div className={signup_form.position_name}>{p.name}</div>
         </div>);
 
@@ -38,6 +39,7 @@ const SignupForm = (props) => {
             </div>
 
             <CustomFileButton values={props.values} setFieldValue={props.setFieldValue}/>
+            <ErrorMessage className={signup_form.error} name={'photo'} component={'div'}/>
 
             <button
                 disabled={!props.values.name || !props.values.email || !props.values.phone || !props.values.position || !props.values.photo}
