@@ -8,7 +8,7 @@ import SignupForm from "./SignupForm/SignupForm";
 
 const Signup = (props) => {
     let onSignUpSubmit = (values) => {
-        props.signUp(values.name, values.email, values.phone, Number(values.position), values.photo)
+        props.signUp(values.name, values.email, values.phone, Number(values.position), values.photo, props.token)
     }
 
     return (

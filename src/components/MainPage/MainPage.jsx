@@ -10,6 +10,7 @@ const MainPage = (props) => {
     useEffect(() => {
         props.getUsers(1, 6);
         props.getPositions();
+        props.getToken();
     }, [props.users])
 
     return (

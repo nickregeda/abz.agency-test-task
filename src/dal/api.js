@@ -17,7 +17,7 @@ export const signupAPI = {
     getPositions() {
         return instance.get(`positions`);
     },
-    signUp(name, email, phone, position_id, photo) {
+    signUp(name, email, phone, position_id, photo, token) {
         const formData = new FormData();
         formData.append('photo', photo);
         formData.append('name', name);
@@ -29,7 +29,7 @@ export const signupAPI = {
             {
                 headers: {
                     'Content-Type': 'multipart/form-data',
-                    'Token': `eyJpdiI6Ik82NGRiNXFoXC92WHN1NlJDVUxNNFhBPT0iLCJ2YWx1ZSI6IlZSSjBzSVVSV2xHcDR6b21WbU54cDdXUVBIUGJpXC9GQ1ViR01xYWRUTXcyWjYwRm1Sc1hMbHZTbEl3OHVnTDZ5eXlxXC95aXV0bjFFM2l2RVBXVVBzZmc9PSIsIm1hYyI6ImNlZGVlMDUwOTgyMzZiZGRlM2JjNWI1OWRhZjEyM2VjZDMzYjE1MDBlNTEzODU0MmM5NDhkZTQzNTAxN2ZlYmUifQ==`
+                    'Token': token
                 }
             })
     },
